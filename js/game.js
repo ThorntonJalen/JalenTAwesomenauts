@@ -8,7 +8,7 @@ var game = {
 		score : 0,
                 enemybaseHealth: 10,
                 playerBaseHealth: 100,
-                enemyCreepHealth: 1,
+                enemyCreepHealth: 5,
                 playerHealth: 1,
                 enemyCreepAttack: 1,
                 playerAttack:1,
@@ -31,7 +31,8 @@ var game = {
                 exp4: 0,
                 win: "",
                 pausePos: "",
-                buyscreen: ""
+                buyscreen: "",
+                buytext: ""
                 
                 
 	},

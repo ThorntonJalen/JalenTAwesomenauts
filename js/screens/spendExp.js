@@ -23,10 +23,10 @@ game.SpendExp = me.ScreenObject.extend({
                     draw: function(render){
                         this.font.draw(render.getContext(), "PRESS F1-F4 TO BUY, F5 TO SKIP", this.pos.x, this.pos.y);
                         this.font.draw(render.getContext(), "CURRENT EXP: " + game.data.exp.toString(), this.pos.x + 100, this.pos.y + 50);
-                        this.font.draw(render.getContext(), "F1: INCREASE GOLD PRODUCTION " + game.data.exp1.toString() + "COST:" + ((game.data.exp1 + 1) * 10), this.pos.x + 100, this.pos.y + 50);
-                        this.font.draw(render.getContext(), "F2: AND STARTING GOLD" , this.pos.x + 100, this.pos.y + 50);
-                        this.font.draw(render.getContext(), "F3: INCRESE ATTACK DAMAGE" , this.pos.x + 100, this.pos.y + 50);
-                        this.font.draw(render.getContext(), "F4: INCREASE STARTING HEALTH", this.pos.x + 100, this.pos.y + 50);
+                        this.font.draw(render.getContext(), "F1: INCREASE GOLD PRODUCTION " + game.data.exp1.toString() + "COST:" + ((game.data.exp1 + 1) * 10), this.pos.x + 100, this.pos.y + 100);
+                        this.font.draw(render.getContext(), "F2: AND STARTING GOLD" , this.pos.x + 100, this.pos.y + 150);
+                        this.font.draw(render.getContext(), "F3: INCRESE ATTACK DAMAGE" , this.pos.x + 100, this.pos.y + 200);
+                        this.font.draw(render.getContext(), "F4: INCREASE STARTING HEALTH", this.pos.x + 100, this.pos.y + 250);
                         
                     },
                         
