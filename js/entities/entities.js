@@ -47,9 +47,9 @@ game.PlayerEntity = me.Entity.extend({
     },
     
     addAnimation: function(){
-         this.renderable.addAnimation("idle", [78]);
-        this.renderable.addAnimation("walk", [117, 118, 119, 120, 121, 122, 123, 124, 125], 80);
-        this.renderable.addAnimation("attack", [65, 66, 67, 68, 69, 70, 71, 72], 80);
+         this.renderable.addAnimation("idle", [48]);
+        this.renderable.addAnimation("walk", [216 ,217, 218 ,219, 220, 221, 223, 224,], 80);
+        this.renderable.addAnimation("attack", [312, 313, 314, 315, 316, ], 80);
     },
     
     update: function(delta) {
