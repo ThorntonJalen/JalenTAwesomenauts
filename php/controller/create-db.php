@@ -1,5 +1,5 @@
 <?php
-require_once (__DIR__ . "/../model/database.php");
+require_once (__DIR__ . "/../model/config.php");
  
 $query = $_SESSION["connection"]->query("CREATE TABLE users (" 
         . "id int(11) NOT NULL AUTO_INCREMENT," 

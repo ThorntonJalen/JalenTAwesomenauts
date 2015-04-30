@@ -175,6 +175,8 @@ game.PlayerEntity = me.Entity.extend({
              
      },
      
+     
+     
      stopMovement: function(xdif){
          if(xdif>0){
                 //this.pos.x = this.pos.x + 1;
@@ -189,6 +191,8 @@ game.PlayerEntity = me.Entity.extend({
             }
      },
      
+    //all is code cheack if thw charcter has been hit
+     
      checkAttack: function(xdif, ydif){
          if(this.renderable.isCurrentAnimation("attack") && this.now-this.lastHit >= 1000
                         && (Math.abs(ydif) <=40) &&  
@@ -200,6 +204,8 @@ game.PlayerEntity = me.Entity.extend({
          }
          return false;
      },
+     
+     // all of this cheacks if the enemy has been hit 
      
      hitCreep: function(response){
         if(response.b.health <= game.data.playerAttack){

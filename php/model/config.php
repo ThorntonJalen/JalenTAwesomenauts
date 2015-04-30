@@ -12,6 +12,7 @@
         $database = "awesomenauts_db";
  
        if(!isset($_SESSION["connection"])) {
+           echo 'making DB';
          $connection = new Database($host, $username, $password, $database);
          $_SESSION["connection"] = $connection;
  }
